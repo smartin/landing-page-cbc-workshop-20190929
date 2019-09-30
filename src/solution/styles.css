@@ -1,0 +1,184 @@
+/* some css files are imported here to keep the code organized */
+@import "/src/css/provided-styles.css";
+
+/* Import fonts from google fonts https://fonts.google.com/
+    You can create font pairs here: https://fontpair.co
+    and then get the import from google fonts
+
+    heading font: Rubik
+    content font: Karla
+*/
+
+/* CSS font @import statement */
+@import url("https://fonts.googleapis.com/css?family=Karla|Rubik&display=swap");
+
+/*  Color palette
+    Go to https://coolors.co to create your own
+  ---------------------------------------------------
+    #32021f (dark sienna)         // 
+    #97ead2 (pale robin egg blue) // 
+    #8cc7a1 (eton blue)           //
+    #816e94 (rhythm)              //
+    #74226c (midnight)            // 
+  --------------------------------------------------- */
+
+/* Styling STEPS
+  ---------------------------------------------------
+    1. Typography
+    2. Header Section
+    3. About Section
+    4. Skill Section
+    5. Education Section
+    6. Footer
+  --------------------------------------------------- */
+
+/* CUSTOM CSS starts here :)
+  --------------------------------------------------- */
+
+/* 1. Typography */
+h1,
+h2,
+h3 {
+  color: #32021f;
+  display: inline-block;
+  font-family: "Rubik", sans-serif;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+h1 {
+  border-bottom: none;
+  font-size: 48px;
+  margin-bottom: 4px;
+  padding: 0;
+  text-align: center;
+  text-transform: capitalize;
+}
+h2 {
+  border-bottom: 12px solid #8cc7a1;
+  font-size: 36px;
+  padding-right: 24px;
+}
+h3 {
+  display: block;
+  font-size: 24px;
+  text-align: center;
+}
+p,
+a,
+li {
+  color: #32021f;
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+}
+.link {
+  color: #fff;
+  margin: 32px 24px 0;
+  text-decoration: none;
+}
+
+/* 2. Banner and Header */
+.banner {
+  background: url(http://unsplash.it/2000/1000) no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.name {
+  color: #fff;
+  font-size: 60px;
+}
+.title {
+  background: #74226c;
+  border-radius: 4px;
+  color: #fff;
+  padding: 6px 16px;
+}
+.avatar {
+  border: 12px solid #fff; /* match color to bg of next section */
+  border-radius: 50%;
+  position: absolute;
+  bottom: -112px; /* half the height of the image */
+}
+
+/* 3. About Section */
+.section.about {
+  background: #fff;
+  padding-top: 174px;
+}
+
+/* 4. Skills Section */
+.skills {
+  background: #74226c;
+}
+.skills p,
+.skills li {
+  color: #97ead2;
+}
+.skills-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+}
+.skills-list-item {
+  background: #97ead2;
+  border-radius: 50%;
+  color: #74226c !important;
+  height: 150px;
+  width: 150px;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  word-wrap: break-word;
+}
+.skills-list-item.last {
+  background: #816e94;
+  border-radius: 6px;
+  height: 100px;
+  width: 100%;
+}
+
+/* 5. Education Section */
+.education {
+  background: #816e94;
+}
+.education-image {
+  border: 2px solid #97ead2;
+  border-radius: 4px;
+  margin-bottom: 14px;
+  width: 100%;
+}
+.education p {
+  text-align: center;
+}
+
+/* 6. Footer */
+.footer {
+  background: #97ead2;
+}
+.legal {
+  background: #fff;
+  height: 60px;
+}
+.copyright {
+  font-size: 11px;
+  margin-top: 6px;
+  text-align: center;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+}
